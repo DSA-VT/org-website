@@ -1,0 +1,9 @@
+# distribution files
+node_modules
+dist
+.routify
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json

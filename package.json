@@ -1,0 +1,42 @@
+{
+  "name": "org-website",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "routify -c dev:vite ",
+    "build": "routify -b && svelte-check && vite build",
+    "dev:vite": "vite",
+    "serve": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "lint": "eslint \"src/**/*.{ts,svelte}\" --max-warnings=0",
+    "lint:timing": "set TIMING=1 && eslint \"src/**/*.{ts,svelte}\" --cache --cache-strategy metadata --max-warnings=0",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^17.5.1",
+    "@commitlint/config-conventional": "^17.4.4",
+    "@typescript-eslint/eslint-plugin": "^6.7.3",
+    "@typescript-eslint/parser": "^6.7.3",
+    "eslint": "^8.50.0",
+    "eslint-plugin-svelte": "^2.33.2",
+    "husky": "^8.0.3",
+    "lint-staged": "^14.0.1",
+    "@roxi/routify": "^2.18.11",
+    "@tormak/vite-plugin-sitemap": "^1.1.18",
+    "@sveltejs/vite-plugin-svelte": "^2.0.0",
+    "@tsconfig/svelte": "^3.0.0",
+    "svelte": "^3.55.0",
+    "svelte-check": "^3.0.0",
+    "svelte-preprocess": "^5.0.0",
+    "tslib": "^2.4.1",
+    "typescript": "^4.6.4",
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "rollup-plugin-workbox": "^8.0.1"
+  },
+  "lint-staged": {
+    "*.{ts,svelte}": "pnpm lint"
+  }
+}
