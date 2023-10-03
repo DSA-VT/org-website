@@ -1,3 +1,56 @@
-<svg width="512" height="512" viewBox="0 0 500 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="512" height="512" viewBox="0 0 215.79261958880062 215.79261958880062">
+  <g>
+    <path
+      d="M0 107.896c0-59.589 48.307-107.896 107.896-107.896 59.589 0 107.896 48.307 107.897 107.896 0 59.589-48.307 107.896-107.897 107.897-59.589 0-107.896-48.307-107.896-107.897zM107.896 207.782c55.165 0 99.886-44.72 99.886-99.886 0-55.165-44.72-99.886-99.886-99.885-55.165 0-99.886 44.72-99.885 99.885 0 55.165 44.72 99.886 99.885 99.886z"
+      data-fill-palette-color="accent"
+      fill="#398378"
+      stroke="transparent"
+    />
+  </g>
+  <g transform="matrix(1,0,0,1,54.38257871129632,45.90844612125434)">
+    <svg xmlns="http://www.w3.org/2000/svg" version="1.1" x="0" y="0" viewBox="9.63800048828125 3.246999979019165 80.7239990234375 93.50699615478516" enable-background="new 0 0 100 100" xml:space="preserve" height="123.97572734629193" width="107.02746216620798" class="icon-s-0" data-fill-palette-color="accent" id="s-0" >
+      <g fill="#398378" data-fill-palette-color="accent">
+        <polygon
+          points="36.703,11.011 9.638,26.636 9.638,38.757 36.703,23.131 63.767,38.757 63.767,26.636"
+          data-fill-palette-color="accent"
+          fill="#398378"
+        />
+      </g>
+      <g fill="#398378" data-fill-palette-color="accent">
+        <polygon
+          points="63.298,89.092 36.233,73.467 36.233,61.348 63.298,76.973 90.362,61.348 90.362,73.467"
+          data-fill-palette-color="accent"
+          fill="#398378"
+        />
+      </g>
+      <g fill="#398378" data-fill-palette-color="accent">
+        <polygon
+          points="9.638,42.012 36.703,26.386 47.198,32.446 20.134,48.072 20.134,79.324 9.638,73.264"
+          data-fill-palette-color="accent"
+          fill="#398378"
+        />
+      </g>
+      <g fill="#398378" data-fill-palette-color="accent">
+        <polygon
+          points="77.083,18.872 50.018,3.247 39.522,9.307 66.586,24.932 66.586,56.184 77.083,50.124"
+          data-fill-palette-color="accent"
+          fill="#398378"
+        />
+      </g>
+      <g fill="#398378" data-fill-palette-color="accent">
+        <polygon
+          points="23.01,81.127 23.011,49.876 33.507,43.816 33.507,75.068 60.571,90.693 50.075,96.754"
+          data-fill-palette-color="accent"
+          fill="#398378"
+        />
+      </g>
+      <g fill="#398378" data-fill-palette-color="accent">
+        <polygon
+          points="90.362,58.092 90.362,26.84 79.866,20.78 79.866,52.031 52.802,67.658 63.298,73.719"
+          data-fill-palette-color="accent"
+          fill="#398378"
+        />
+      </g>
+    </svg>
+  </g>
 </svg>

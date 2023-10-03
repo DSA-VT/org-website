@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { afterPageLoad, beforeUrlChange, goto, urlRoute } from "@roxi/routify";
+	import { beforeUrlChange, goto, ready } from "@roxi/routify";
   
   import DesktopNavLink from "./DesktopNavLink.svelte";
   import { onMount } from "svelte";
@@ -25,17 +25,18 @@
 
   let navLinkContainer: HTMLDivElement;
 
-  let selectionLeft = 0;
-  let selectionTop = 0;
-  let selectionWidth = 0;
+  let selectionLeft = 9;
+  let selectionTop = 11;
+  let selectionWidth = 39;
+  let readyToRender = false;
 
+  /**
+   * Handles setting the position of the page indicator.
+   * @param page The current route page information.
+   */
   function handleNavIndicator(page: ClientNodeApi): void {
-    console.log(page);
-
     const routifyRoute = page.path.split("/")[1];
-
     const startingBoundingBox = routeBoundingBoxLUT[routifyRoute]();
-    console.log(startingBoundingBox);
 
     const containerBoundingBox = navLinkContainer.getBoundingClientRect();
     selectionTop = startingBoundingBox.top - containerBoundingBox.top;
@@ -45,18 +46,18 @@
 
   $beforeUrlChange((_, route: ClientNodeApi) => {
     handleNavIndicator(route);
-
     return true;
   });
 
-  $afterPageLoad((page: ClientNodeApi) => {
-    handleNavIndicator(page);
-
-    return true
-  })
-
   onMount(() => {
-    
+    const route = window.location.pathname.split("/")[1]
+    const routifyRoute = route === "" ? "index" : route;
+
+    handleNavIndicator({ path: `/${routifyRoute}` } as ClientNodeApi);
+    setTimeout(() => {
+      readyToRender = true;
+      $ready();
+    }, 0);
   });
 </script>
 
@@ -71,7 +72,7 @@
         <DesktopNavLink label={routeLabelLUT[route]} route="./{route}" bind:getButtonBoundingBox={routeBoundingBoxLUT[route]} />
       {/each}
     </div>
-    <div class="selection-indicator" style="top: {selectionTop}px; left: {selectionLeft}px; width: {selectionWidth}px" />
+    <div class="selection-indicator" style="top: {selectionTop}px; left: {selectionLeft}px; width: {selectionWidth}px" class:transition={readyToRender} />
   </div>
 </div>
 
@@ -125,7 +126,9 @@
     position: absolute;
 
     background-color: var(--highlight);
+  }
 
+  .transition {
     transition: left 0.2s ease-in-out;
   }
 </style>
