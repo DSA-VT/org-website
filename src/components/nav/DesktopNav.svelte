@@ -36,12 +36,15 @@
    */
   function handleNavIndicator(page: ClientNodeApi): void {
     const routifyRoute = page.path.split("/")[1];
-    const startingBoundingBox = routeBoundingBoxLUT[routifyRoute]();
 
-    const containerBoundingBox = navLinkContainer.getBoundingClientRect();
-    selectionTop = startingBoundingBox.top - containerBoundingBox.top;
-    selectionLeft = startingBoundingBox.left - containerBoundingBox.left;
-    selectionWidth = startingBoundingBox.right - startingBoundingBox.left - 20;
+    if (Object.keys(routeBoundingBoxLUT).includes(routifyRoute)) {
+      const startingBoundingBox = routeBoundingBoxLUT[routifyRoute]();
+
+      const containerBoundingBox = navLinkContainer.getBoundingClientRect();
+      selectionTop = startingBoundingBox.top - containerBoundingBox.top;
+      selectionLeft = startingBoundingBox.left - containerBoundingBox.left;
+      selectionWidth = startingBoundingBox.right - startingBoundingBox.left - 20;
+    }
   }
 
   $beforeUrlChange((_, route: ClientNodeApi) => {
@@ -69,7 +72,7 @@
   <div class="navigation" bind:this={navLinkContainer}>
     <div class="nav-link-container">
       {#each routes as route}
-        <DesktopNavLink label={routeLabelLUT[route]} route="./{route}" bind:getButtonBoundingBox={routeBoundingBoxLUT[route]} />
+        <DesktopNavLink label={routeLabelLUT[route]} route="/{route}" bind:getButtonBoundingBox={routeBoundingBoxLUT[route]} />
       {/each}
     </div>
     <div class="selection-indicator" style="top: {selectionTop}px; left: {selectionLeft}px; width: {selectionWidth}px" class:transition={readyToRender} />

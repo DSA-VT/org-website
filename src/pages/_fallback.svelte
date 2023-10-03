@@ -1,5 +1,7 @@
 <script lang="ts">
-    
+  import { metatags } from "@roxi/routify";
+
+  metatags.title = "404 Error";
 </script>
 
 <div class="not-found-error">

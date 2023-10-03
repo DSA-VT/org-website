@@ -1,6 +1,5 @@
 <script lang="ts">
 	import MediaQuery from "../components/utils/MediaQuery.svelte";
-	import Socials from "../components/Socials.svelte";
 
   import DesktopNav from "../components/nav/DesktopNav.svelte";
   import MobileNav from "../components/nav/MobileNav.svelte";
