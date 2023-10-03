@@ -5,26 +5,31 @@
 </script>
 
 <div class="navigation" class:menu-hidden={!showing}>
-  <MobileNavLink label="About" route="./index" />
-  <MobileNavLink label="Events" route="./events" />
-  <MobileNavLink label="Officers" route="./officers" />
-  <MobileNavLink label="Contact" route="./contact" />
+  <MobileNavLink label="About" route="./index" bind:mobileMenuIsOpen={showing} />
+  <MobileNavLink label="Events" route="./events" bind:mobileMenuIsOpen={showing} />
+  <MobileNavLink label="Officers" route="./officers" bind:mobileMenuIsOpen={showing} />
+  <MobileNavLink label="Contact" route="./contact" bind:mobileMenuIsOpen={showing} />
 </div>
 
 <style>
   .navigation {
 		z-index: 100;
 		position: absolute;
+
 		left: calc(100% - 150px);
-		top: 50px;
-		transition: left 0.4s;
+		top: 0px;
+
 		height: 100%;
+
+		transition: left 0.4s;
+
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
 		align-items: center;
-		background-color: var(--foreground);
-    border-left: 1px solid var(--srcery-xgray2);
+
+		background-color: var(--background);
+    border-left: 1px solid var(--foreground);
 	}
 
 	.menu-hidden {

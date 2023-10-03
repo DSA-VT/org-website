@@ -15,18 +15,14 @@
       <DesktopNav />
     {:else}
       <MobileHeader bind:mobileNavOpen={mobileNavOpen} />
+      <MobileNav bind:showing={mobileNavOpen} />
     {/if}
   </MediaQuery>
   <div class="content-wrapper" class:menu-hidden={!mobileNavOpen}>
-    <div class="content-body">
-      <Socials />
+    <!-- svelte-ignore a11y-click-events-have-key-events -->
+    <div class="content-body" on:click={() => mobileNavOpen = false}>
       <slot />
     </div>
-    <MediaQuery query="(orientation:landscape)" let:matches>
-      {#if !matches}
-        <MobileNav showing={mobileNavOpen} />
-      {/if}
-    </MediaQuery>
   </div>
 	<div class="rights">© DSA @ VT {new Date().getFullYear()}</div>
 </div>

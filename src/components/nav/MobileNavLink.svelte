@@ -3,10 +3,16 @@
   
   export let label: string;
   export let route: string;
+
+  export let mobileMenuIsOpen: boolean;
+
+  function clickHandler() {
+    mobileMenuIsOpen = false;
+  }
 </script>
 
 <div class="nav-link" class:rendered={$isActive(route)}>
-  <a href={$url(route)} class="nav-btn">{label}</a>
+  <a href={$url(route)} class="nav-btn" on:click={clickHandler}>{label}</a>
 </div>
 
 <style>
