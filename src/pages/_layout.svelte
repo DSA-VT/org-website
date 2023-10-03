@@ -4,8 +4,16 @@
   import DesktopNav from "../components/nav/DesktopNav.svelte";
   import MobileNav from "../components/nav/MobileNav.svelte";
   import MobileHeader from "../components/nav/MobileHeader.svelte";
+  import { metatags, page } from "@roxi/routify";
+  import { BASE_URL } from "../stores";
 
   let mobileNavOpen = false;
+
+  $: metatags.title = $page.meta["title"];
+  $: metatags["twitter:title"] = $page.meta["title"];
+  $: metatags.description = $page.meta["description"];
+  $: metatags["twitter:description"] = $page.meta["description"];
+  $: metatags.url = BASE_URL + $page.path;
 </script>
 
 <div class="layout">

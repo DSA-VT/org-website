@@ -1,7 +1,9 @@
-<script lang="ts">
-  import { metatags } from "@roxi/routify";
+<!-- ? Route Metadata -->
+<!-- routify:options title="DSA @ VT" -->
+<!-- routify:options description="TODO" -->
 
-  metatags.title = "DSA @ VT";
+<script lang="ts">
+
 </script>
 
 <div class="about">

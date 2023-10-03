@@ -1,7 +1,9 @@
-<script lang="ts">
-  import { metatags } from "@roxi/routify";
+<!-- ? Route Metadata -->
+<!-- routify:options title="Events" -->
+<!-- routify:options description="TODO" -->
 
-  metatags.title = "Events";
+<script lang="ts">
+  
 </script>
 
 <div class="events">

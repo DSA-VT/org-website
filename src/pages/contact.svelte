@@ -1,7 +1,9 @@
-<script lang="ts">
-  import { metatags } from "@roxi/routify";
+<!-- ? Route Metadata -->
+<!-- routify:options title="Contact Us" -->
+<!-- routify:options description="Reach out to DSA @ VT with any questions you might have." -->
 
-  metatags.title = "Contact Us";
+<script lang="ts">
+  
 </script>
 
 <div class="contact">
