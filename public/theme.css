@@ -41,9 +41,33 @@
   font-display: swap;
 }
 
-:root {
+[data-theme="dark"] {
+  --background-dark: #111111;
+  
+  --background: #1e1e1e;
+  --background-hover: #282828;
+  
+  --foreground: #2c2c2c;
+  --foreground-hover: #313131;
+  
+  --foreground-light: #3e3e3e;
+  --foreground-light-hover: #4a4a4a;
+
+  --highlight: #398378;
+  --highlight-hover: #3c9689;
+
+  --secondary: #8abe53;
+  --secondary-hover: #8ecc4d;
+
+  --font-color: #e7e7e7;
+
+  --link-color: #00bbff;
+  --link-color-hover: #009dff;
+  --link-color-visted: #005eff;
+}
+
+[data-theme="light"] {
   --background-dark: ;
-  --background-dark-hover: ;
   
   --background: ;
   --background-hover: ;
@@ -54,8 +78,11 @@
   --foreground-light: ;
   --foreground-light-hover: ;
 
-  --highlight: ;
-  --highlight-hover: ;
+  --highlight: #398378;
+  --highlight-hover: #3c9689;
+
+  --secondary: #8abe53;
+  --secondary-hover: #8ecc4d;
 
   --font-color: ;
 
