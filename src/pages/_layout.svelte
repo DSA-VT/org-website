@@ -31,7 +31,6 @@
       <slot />
     </div>
   </div>
-	<div class="rights">© DSA @ VT {new Date().getFullYear()}</div>
 </div>
 
 <style>
@@ -64,15 +63,5 @@
 		justify-content: center;
 		align-items: center;
 		overflow: hidden;
-	}
-  
-	.rights {
-		position: absolute;
-		right: 7px;
-		bottom: 7px;
-		font-size: 10px;
-		opacity: 0.4;
-
-		z-index: 1000;
 	}
 </style>
