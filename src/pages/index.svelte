@@ -5,7 +5,6 @@
 <script lang="ts">
   import Socials from "../components/Socials.svelte";
 
-
 </script>
 
 <div class="about">
