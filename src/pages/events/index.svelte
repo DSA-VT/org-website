@@ -1,6 +1,6 @@
 <!-- ? Route Metadata -->
 <!-- routify:options title="Events" -->
-<!-- routify:options description="TODO" -->
+<!-- routify:options description="See all of our upcoming events, workshops, and socials" -->
 
 <script lang="ts">
   
