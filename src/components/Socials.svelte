@@ -55,11 +55,11 @@
   }
 
   .social-icon svg > path {
-    fill: var(--background);
+    fill: var(--background-hover);
     transition: fill 0.3s ease-in-out;
   }
 
   .social-icon:hover svg > path {
-    fill: var(--background-hover);
+    fill: var(--foreground);
   }
 </style>
