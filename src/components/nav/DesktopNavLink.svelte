@@ -1,14 +1,21 @@
 <script lang="ts">
 	import { isActive, url } from "@roxi/routify";
+  import { onMount } from "svelte";
   
   export let label: string;
   export let route: string;
 
   let navBtnElem: HTMLAnchorElement;
 
-  export const getButtonBoundingBox = (): DOMRect => {
+  export let getButtonBoundingBox = (): DOMRect => {
     return navBtnElem.getBoundingClientRect();
   }
+
+  onMount(() => {
+    getButtonBoundingBox = (): DOMRect => {
+      return navBtnElem.getBoundingClientRect();
+    }
+  });
 </script>
 
 <div class="nav-link">

@@ -1,18 +1,31 @@
 <script lang="ts">
 	import { isActive, url } from "@roxi/routify";
+  import { onMount } from "svelte";
   
   export let label: string;
   export let route: string;
 
   export let mobileMenuIsOpen: boolean;
 
+  let navBtnElem: HTMLAnchorElement;
+
+  export let getButtonBoundingBox = (): DOMRect => {
+    return navBtnElem.getBoundingClientRect();
+  }
+
   function clickHandler() {
     mobileMenuIsOpen = false;
   }
+
+  onMount(() => {
+    getButtonBoundingBox = (): DOMRect => {
+      return navBtnElem.getBoundingClientRect();
+    }
+  });
 </script>
 
 <div class="nav-link" class:rendered={$isActive(route)}>
-  <a href={$url(route)} class="nav-btn" on:click={clickHandler}>{label}</a>
+  <a href={$url(route)} class="nav-btn" on:click={clickHandler} bind:this={navBtnElem}>{label}</a>
 </div>
 
 <style>
