@@ -18,33 +18,33 @@
     },
     "david": {
       "name": "David Smits",
-      "position": "Needed",
+      "position": "Internal VP",
       "aboutMe": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. A error ea perferendis nemo, fugit culpa tenetur unde similique soluta? Eaque consectetur debitis, enim quis temporibus velit ex et nisi ratione optio animi unde deleniti, hic eos, totam accusantium in omnis."
     },
     "daniel": {
       "name": "Junhyung (Daniel) Koo",
-      "position": "Needed",
+      "position": "External VP",
       "aboutMe": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus saepe voluptates, quia id accusamus modi alias nisi quam ullam ipsam temporibus dicta aliquid ducimus recusandae. Consequuntur itaque beatae dolorem nesciunt animi, magni ex reiciendis qui fuga ducimus architecto? Hic, vero?"
     },
     "joon": {
       "name": "Daniel Park",
-      "position": "Needed",
+      "position": "Event Planner",
       "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat omnis tempore suscipit temporibus inventore. Molestias, optio, corporis hic ducimus repudiandae quos quaerat ipsum reprehenderit molestiae aliquid quae architecto repellendus. Doloremque placeat nisi voluptatem, nam assumenda illo fuga perferendis ratione voluptate!"
     },
     "gibbs": {
       "name": "Needed",
-      "position": "Needed",
+      "position": "Marketing",
       "aboutMe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui iste repellendus temporibus iusto deserunt provident minus facilis, commodi laboriosam eum quod fugiat doloribus maiores error cumque? Maiores aliquid quia sint voluptatibus veniam iste, libero sequi praesentium modi atque mollitia sunt."
-    },
-    "travis": {
-      "name": "Travis Lane",
-      "position": "",
-      "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique officia atque excepturi assumenda asperiores quo? Dignissimos, eos voluptates! Aut in sapiente ipsum expedita voluptate, ex nulla id, delectus repellendus temporibus voluptatem pariatur impedit obcaecati sint esse quis officiis eum."
     },
     "prat": {
       "name": "Needed",
-      "position": "Needed",
+      "position": "Outreach",
       "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquam est illum, ullam voluptates laboriosam blanditiis corporis quis amet similique dolores, quae nihil tempora ducimus ad voluptatum explicabo exercitationem nobis aperiam doloremque? Voluptatem dolores minus repudiandae reprehenderit vitae doloribus rem?"
+    },
+    "travis": {
+      "name": "Travis Lane",
+      "position": "Needed",
+      "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis similique officia atque excepturi assumenda asperiores quo? Dignissimos, eos voluptates! Aut in sapiente ipsum expedita voluptate, ex nulla id, delectus repellendus temporibus voluptatem pariatur impedit obcaecati sint esse quis officiis eum."
     },
     "carter": {
       "name": "Carter Kosturos",
@@ -53,7 +53,7 @@
     },
     "patrick": {
       "name": "Needed",
-      "position": "Needed",
+      "position": "Treasurer",
       "aboutMe": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti neque dicta, facilis nulla aliquam blanditiis atque modi molestias, sapiente dolore accusantium laborum itaque quae illo explicabo quaerat asperiores suscipit ad rerum? Porro odit impedit, vel doloremque est placeat alias commodi!"
     }
   }
@@ -67,13 +67,15 @@
 
 <style>
   .officers {
-    height: calc(100% - 20px);
+    min-height: calc(100% - 20px);
     width: calc(100% - 20px);
-    padding: 10px;
+    margin-top: 40px;
+    padding: 20px;
     overflow-y: scroll;
 
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
   }
 </style>

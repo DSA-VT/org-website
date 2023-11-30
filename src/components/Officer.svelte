@@ -23,6 +23,9 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 40px;
+
+    min-width: 350px;
+    max-width: 400px;
   }
 
   .image {

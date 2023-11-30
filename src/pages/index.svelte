@@ -12,7 +12,10 @@
     <img src="/images/logo-and-name.svg" alt="logo" width="100%" />
   </div>
   <div class="about-us">
-    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor ducimus libero corporis ullam et ad, magnam enim, quia fugit explicabo itaque rem unde laborum ab illo, hic saepe deleniti laboriosam doloribus. Assumenda aperiam cumque iste id iusto natus inventore architecto.
+    We aim to create a community of students who are interested in learning and studying data structures and algorithms. 
+    The club provides a platform for members to prepare for technical interviews by discussing DSA topics and questions. 
+    Members can collaborate and learn from one another in a supportive environment. 
+    The club is dedicated to fostering a passion for computer science and developing technical skills among its members.
   </div>
   <Socials />
 </div>
@@ -20,6 +23,7 @@
 <style>
   .about {
     width: 80%;
+    max-width: 800px;
 
     display: flex;
     flex-direction: column;
@@ -29,6 +33,7 @@
   .logo {
     width: min(100%, 1000px);
     margin-bottom: 40px;
+    max-width: 600px;
   }
 
   .about-us {
