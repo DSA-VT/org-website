@@ -24,12 +24,12 @@
     "daniel": {
       "name": "Junhyung (Daniel) Koo",
       "position": "External VP",
-      "aboutMe": "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus saepe voluptates, quia id accusamus modi alias nisi quam ullam ipsam temporibus dicta aliquid ducimus recusandae. Consequuntur itaque beatae dolorem nesciunt animi, magni ex reiciendis qui fuga ducimus architecto? Hic, vero?"
+      "aboutMe": "I am a junior studying computer science at Virginia Tech. I enjoy cooking and traveling to places I’ve never been before. I also enjoy listening to jazz! I am happy to be a part of this club"
     },
     "joon": {
       "name": "Daniel Park",
       "position": "Event Planner",
-      "aboutMe": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat omnis tempore suscipit temporibus inventore. Molestias, optio, corporis hic ducimus repudiandae quos quaerat ipsum reprehenderit molestiae aliquid quae architecto repellendus. Doloremque placeat nisi voluptatem, nam assumenda illo fuga perferendis ratione voluptate!"
+      "aboutMe": "Senior studying Computer Science, graduating Spring 2024. I am also currently serving as a UTA for CS classes. Previously, I have been a part of undergraduate research, working with the data visualization of brain tumors under Professor Polys. My hobbies are working out, music, and basketball."
     },
     "gibbs": {
       "name": "Needed",
