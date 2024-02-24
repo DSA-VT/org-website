@@ -43,12 +43,12 @@
     },
     "travis": {
       "name": "Travis Lane",
-      "position": "Needed",
+      "position": "Internal Developer",
       "aboutMe": "I'm a sophomore studying Data Science and minoring in CS. I'm from Collierville TN, and I currently work as a Software Engineer for Actalent, focusing on web technologies. I enjoying playing tennis, hiking, and working out."
     },
     "carter": {
       "name": "Carter Kosturos",
-      "position": "Needed",
+      "position": "Internal Developer",
       "aboutMe": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dolorum molestiae a modi neque aliquam, ducimus non voluptas unde quod exercitationem excepturi sunt rem corrupti totam iste. Quo ipsam impedit vel cumque? Nihil soluta debitis velit explicabo pariatur at! Nisi."
     },
     "patrick": {
