@@ -14,7 +14,8 @@
   </div>
   <div class="name">{name}</div>
   <div class="position">{position}</div>
-  <div class="about-me">{aboutMe}</div>
+  <!-- eslint-disable-next-line svelte/no-at-html-tags -->
+  <div class="about-me">{@html aboutMe}</div>
 </div>
 
 <style>
@@ -26,6 +27,10 @@
 
     min-width: 350px;
     max-width: 400px;
+
+    margin: 0px 14px;
+
+    height: 450px;
   }
 
   .image {
